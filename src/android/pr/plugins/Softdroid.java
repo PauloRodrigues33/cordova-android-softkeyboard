@@ -1,4 +1,4 @@
-package nl.xservices.plugins;
+package pr.plugins;
 
 import android.Manifest;
 import android.annotation.TargetApi;
