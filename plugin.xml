@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-keyboard-softdroid"
+        version="3.2.0">
+
+  <name>KeyboardSoftdroid</name>
+
+  <description>
+    This plugin allows capture some events from android keyboards.
+  </description>
+
+  <author>Paulo Rodrigues - @PauloRodrigues33</author>
+
+  <license>MIT</license>
+
+  <keywords>Keyboard, Softkeyboard, AndroidKeyboard</keywords>
+
+  <repo>https://github.com/PauloRodrigues33/cordova-android-softkeyboard</repo>
+
+  <issue>https://github.com/PauloRodrigues33/cordova-android-softkeyboard/issues</issue>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/softdroid.js" name="Softdroid">
+    <clobbers target="window.plugins.flashlight" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Softdroid">
+        <param name="android-package" value="nl.xservices.plugins.Flashlight" />
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.CAMERA"/>
+    </config-file>
+
+    <source-file src="src/android/nl/xservices/plugins/Flashlight.java" target-dir="src/nl/xservices/plugins"/>
+
+    <dependency id="cordova-plugin-compat" version="^1.0.0" />
+  </platform>
+
+</plugin>
