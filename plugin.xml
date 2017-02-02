@@ -25,7 +25,7 @@
   </engines>
 
   <js-module src="www/softdroid.js" name="Softdroid">
-    <clobbers target="window.plugins.flashlight" />
+    <clobbers target="window.plugins.softdroid" />
   </js-module>
 
   <!-- android -->
@@ -41,7 +41,7 @@
       <uses-permission android:name="android.permission.CAMERA"/>
     </config-file>
 
-    <source-file src="src/android/nl/xservices/plugins/Flashlight.java" target-dir="src/nl/xservices/plugins"/>
+    <source-file src="src/android/pr/plugins/Softdroid.java" target-dir="src/pr/plugins"/>
 
     <dependency id="cordova-plugin-compat" version="^1.0.0" />
   </platform>

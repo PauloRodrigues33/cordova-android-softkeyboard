@@ -1,28 +1,23 @@
 {
-  "name": "cordova-plugin-flashlight",
-  "version": "3.2.0",
-  "description": "This plugin allows you switch the Flashlight / Torch of your device on or off.",
+  "name": "cordova-keyboard-softdroid",
+  "version": "0.0.1",
+  "description": "This plugin allows capture events from your android soft keyboard.",
   "cordova": {
-    "id": "cordova-plugin-flashlight",
+    "id": "cordova-plugin-softdroid",
     "platforms": [
-      "ios",
-      "android",
-      "wp8"
+      "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git"
+    "url": "git+https://github.com/PauloRodrigues33/cordova-android-softkeyboard"
   },
   "keywords": [
-    "Torch",
-    "Flashlight",
-    "Flash",
-    "Light",
+    "Keyboard",
+    "Softdroid",
+    "Android",
     "ecosystem:cordova",
-    "cordova-ios",
-    "cordova-android",
-    "cordova-wp8"
+    "cordova-android"
   ],
   "engines": [
     {
@@ -30,10 +25,10 @@
       "version": ">=3.0.0"
     }
   ],
-  "author": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)",
+  "author": "Paulo Rodrigues <paulo.robertojr33@gmail.com> (https://github.com/PauloRodrigues33)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin/issues"
+    "url": "https://github.com/PauloRodrigues33/cordova-android-softkeyboard/issues"
   },
-  "homepage": "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin#readme"
+  "homepage": "https://github.com/PauloRodrigues33/cordova-android-softkeyboard/"
 }
